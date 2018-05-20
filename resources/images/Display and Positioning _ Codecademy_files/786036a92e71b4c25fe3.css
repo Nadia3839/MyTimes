@@ -1,0 +1,1115 @@
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.container__3ob3fB-nROC9zycL11oWfn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 90vw;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2); }
+
+.radio__3W4vPBGBhuuQqfUqu-AswZ {
+  -webkit-appearance: radio;
+     -moz-appearance: radio;
+          appearance: radio;
+  margin-right: 0.625rem; }
+
+.desktop__2as-Ju7nnR5EKI044m3Om {
+  height: 6.25rem;
+  padding: 1rem; }
+
+.copy__3hBopOAfL4ry3rNvI5iO9e {
+  line-height: 1.5625rem; }
+
+.content__3IEv2mIrrOtVtXIjR8VhgR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5625rem;
+  flex: 1; }
+
+.heading__6BvolOFvW3UWRoYmJ8-CL {
+  font-weight: bold;
+  font-size: 1.375rem; }
+
+.confirm__1bLZ0fSu6fsdSpApx74RCd {
+  margin: 20px;
+  width: 12.5rem; }
+
+.seenAlready__2W6ynDlWtg2kDUN8o5bgcu {
+  padding: 0.625rem;
+  width: 100%;
+  border-top: 1px solid #000000; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+@-webkit-keyframes fade-in__31WUQ5Bmy4dK7PuE-fOpIr {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fade-in__31WUQ5Bmy4dK7PuE-fOpIr {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fade-out__3i-4XN7dg1WrhQvz3kMOPl {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fade-out__3i-4XN7dg1WrhQvz3kMOPl {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.overlay__3VZoRx506F-jSuvoxLwSVd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .overlay__3VZoRx506F-jSuvoxLwSVd::before {
+    content: "";
+    background-color: rgba(21, 43, 57, 0.8);
+    -webkit-animation: fade-in__31WUQ5Bmy4dK7PuE-fOpIr 500ms forwards;
+            animation: fade-in__31WUQ5Bmy4dK7PuE-fOpIr 500ms forwards;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+.overlayClosing__pI8LF8UczIpFZpwNTDH7e::before {
+  -webkit-animation: fade-out__3i-4XN7dg1WrhQvz3kMOPl 300ms forwards;
+          animation: fade-out__3i-4XN7dg1WrhQvz3kMOPl 300ms forwards; }
+
+.modalContent__2nyerWJYwhtqNMxqgzbzMr {
+  z-index: 0; }
+  .modalContent__2nyerWJYwhtqNMxqgzbzMr:focus {
+    outline: none; }
+
+.screenReaderOnly__1SyakAQGSIs3AM051DW1dt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  border: 0; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+@-webkit-keyframes animateIn__3CBznqXnKs3rcNHCyusFiE {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+@keyframes animateIn__3CBznqXnKs3rcNHCyusFiE {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes animateOut__3WkD_9rIA_Q6CqtObV7TuN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes animateOut__3WkD_9rIA_Q6CqtObV7TuN {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.modalContent__28oy1hPFQLOrRdv_whaCT7 {
+  max-width: 40rem;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  border: 12px solid #37c3be;
+  padding: 2.5rem;
+  opacity: 0;
+  -webkit-animation: animateIn__3CBznqXnKs3rcNHCyusFiE 300ms 400ms forwards;
+          animation: animateIn__3CBznqXnKs3rcNHCyusFiE 300ms 400ms forwards;
+  color: #292929;
+  font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 a {
+    font-weight: bold;
+    color: #6400e4; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 b {
+    font-weight: bold;
+    font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 p {
+    line-height: 1.5;
+    font-size: 1.1rem; }
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 h1,
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 p,
+  .modalContent__28oy1hPFQLOrRdv_whaCT7 ul {
+    color: #292929 !important;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+
+.modalIsClosing__35WkaZF7W4lvGAxPP83UTz {
+  -webkit-animation: animateOut__3WkD_9rIA_Q6CqtObV7TuN 150ms;
+          animation: animateOut__3WkD_9rIA_Q6CqtObV7TuN 150ms; }
+
+.mintyEmphasis__3Z5Ed9OVIw-pCtStzqo4nM {
+  color: #37c3be;
+  display: block;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 3.2rem; }
+
+.centeredBtn__3uNV3Z0YQiNf2OY4JVlnxP {
+  text-align: center;
+  margin-top: 2rem; }
+
+.modalOverlay__37pXIRdQovmJwXyzKM_bXR::before {
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.proLogo__1PCU3Ylr-Tj21lTHk_qaah {
+  vertical-align: bottom;
+  width: 5rem; }
+
+.headingText__2naeqBp-Hi7d_MSwN-NguW {
+  font-size: 1.9rem;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.1;
+  color: #292929; }
+
+.bulletList__1TaJLUQT3KuMiS_FFAw7wC li {
+  list-style-type: disc !important;
+  margin-top: 0.75rem;
+  font-size: 1.1rem; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.wrapper__1QlB8Mm4sZduRwvRo_fo-m {
+  text-align: center;
+  min-width: 22.5rem;
+  max-width: 25rem;
+  min-height: 19rem;
+  max-height: 37.5rem;
+  background-color: #ffffff;
+  overflow: auto;
+  padding: 2rem; }
+
+.closeButton__1R2n7SqgKpOpeSHkX-XPhI {
+  position: relative;
+  float: right;
+  top: -1rem;
+  margin-bottom: -1rem;
+  font-size: 1.25rem; }
+
+.header__2Majad4m5U8MHLCID-dHEY {
+  clear: both;
+  font-size: 1.625rem;
+  margin: 1rem 0; }
+
+.subheader__v6KEawBemdO9U-mLX-9v7 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem; }
+
+.buttonWrapper__2i11gOmcNK55LFt3ZI17mq {
+  width: 15.0625rem;
+  margin: 0 auto; }
+
+.primaryButton__2iCCTCUFZNKgTlQXCQmBPg {
+  margin-bottom: 1rem; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror {
+  background-color: #354551;
+  text-shadow: 1px 1px 1px rgba(43, 56, 66, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  font-family: Monaco, Menlo, "Ubuntu Mono", "Droid Sans Mono", Consolas, monospace;
+  font-weight: 300; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF ::-moz-selection {
+  background: rgba(45, 45, 45, 0.99); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF ::selection {
+  background: rgba(45, 45, 45, 0.99); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF ::-moz-selection {
+  background: rgba(45, 45, 45, 0.99); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-gutters {
+  background-color: #354551;
+  border-right-color: transparent;
+  padding-right: 8px; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lines {
+  padding: 10px 0;
+  /* Vertical padding around content */ }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF pre {
+  padding: 0;
+  /* Horizontal padding of content */ }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-guttermarker {
+  color: #f2777a; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-guttermarker-subtle {
+  color: rgba(204, 204, 204, 0.5); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-linenumber {
+  color: rgba(204, 204, 204, 0.5); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-cursor {
+  border-left: 2px solid rgba(255, 255, 255, 0.5) !important; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF div.CodeMirror-selected {
+  background: #2d2d2d !important; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-activeline-background {
+  background: transparent !important; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-activeline-background
++ .CodeMirror-gutter-wrapper
+.CodeMirror-linenumber {
+  color: #cccccc; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-matchingbracket,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-nonmatchingbracket {
+  color: #ffffff !important;
+  text-decoration: none;
+  background-color: #217572;
+  border-radius: 2px;
+  padding-bottom: 2px; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-nonmatchingbracket {
+  background-color: #fa4359; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-matchingtag {
+  background: transparent; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-matchingtag.cm-tag {
+  background-color: rgba(255, 255, 255, 0.07); }
+  .defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-matchingtag.cm-tag.cm-bracket {
+    background-color: rgba(255, 255, 255, 0); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldmarker {
+  color: #ffffff;
+  font-family: arial;
+  line-height: 0.9;
+  display: inline-block;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding: 0 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+  border-radius: 4px; }
+  .defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldmarker:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldgutter {
+  width: 0.7em; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldgutter-open,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldgutter-folded {
+  cursor: pointer;
+  line-height: 1.1; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldgutter-open:after {
+  content: "\25BE"; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-foldgutter-folded:after {
+  content: "\25B8"; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-code > div {
+  padding-bottom: 2px; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-gutter-elt {
+  padding-left: 5px; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF pre {
+  word-break: normal; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-overlayscroll-vertical {
+  background-color: rgba(0, 0, 0, 0.15); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-overlayscroll-vertical div {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-markers {
+  width: 10px;
+  height: 10px; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-error,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-multiple {
+  background-color: #f65a5b; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-warning {
+  display: none; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-error,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-warning,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-multiple {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative; }
+
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-mark-error,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-mark-warning,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-error,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-multiple,
+.defaults__1l9bk0Z91YqvzRByZKNgHF .CodeMirror-lint-marker-warning {
+  background-image: none; }
+
+.cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror {
+  color: #ffffff; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-comment {
+    color: #939598; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-property {
+    color: #83fff5; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-string {
+    color: #ffe083; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-atom {
+    color: #cc7bc2; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-attribute {
+    color: #b4d353; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-qualifier {
+    color: #b4d353; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-variable {
+    color: #ff8973; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-variable-2 {
+    color: #ff8973; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-variable-3 {
+    color: #ff8973; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-tag {
+    color: #e85d7f; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-bracket {
+    color: #e85d7f; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-keyword {
+    color: #b3ccff; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-def {
+    color: #b3ccff; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-number {
+    color: #ff8973; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-operator {
+    color: #ffffff; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-error {
+    color: #ffffff; }
+  .cc__1zsV8w8Rj_vs2ayVLJ-2x .CodeMirror .cm-builtin {
+    color: #ffffff; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.control__D9eW5UKHb2ng_LqoydLEG {
+  padding: 14px;
+  color: #a9aaad;
+  cursor: pointer;
+  background-color: inherit; }
+  .control__D9eW5UKHb2ng_LqoydLEG:hover {
+    color: #d4d5d6; }
+
+.controlDisabled__13_a1W1B6Iwko_9DreIxbS {
+  pointer-events: none;
+  opacity: 0.4; }
+
+.CodeBlock__3-kebd7REMI5aXkez6K-B {
+  display: block;
+  text-align: left; }
+
+.CodeBlock__3-kebd7REMI5aXkez6K-B .CodeMirror {
+  overflow: auto;
+  height: auto;
+  padding: 1rem; }
+
+.wrap__yxnEyEmMpigk6-3_Wvbzo,
+.wrap__yxnEyEmMpigk6-3_Wvbzo pre {
+  word-wrap: break-all;
+  white-space: pre-wrap; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.theme__gGunuXH7DwafQKIoo6BYh {
+  font-size: 18px;
+  font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #3e3e40;
+  line-height: 1.8; }
+  .theme__gGunuXH7DwafQKIoo6BYh h1,
+  .theme__gGunuXH7DwafQKIoo6BYh h2,
+  .theme__gGunuXH7DwafQKIoo6BYh h3,
+  .theme__gGunuXH7DwafQKIoo6BYh h4 {
+    font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #3e3e40;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 1.94444rem 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .theme__gGunuXH7DwafQKIoo6BYh h2,
+  .theme__gGunuXH7DwafQKIoo6BYh h3,
+  .theme__gGunuXH7DwafQKIoo6BYh h4 {
+    text-transform: uppercase; }
+  .theme__gGunuXH7DwafQKIoo6BYh h1 {
+    font-size: 2.22222em;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .theme__gGunuXH7DwafQKIoo6BYh h2 {
+    font-size: 1.44444em;
+    font-weight: bold;
+    letter-spacing: 0.05rem; }
+  .theme__gGunuXH7DwafQKIoo6BYh h3 {
+    font-size: 1.44444em;
+    letter-spacing: 0.05rem; }
+  .theme__gGunuXH7DwafQKIoo6BYh h4 {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05rem; }
+  .theme__gGunuXH7DwafQKIoo6BYh h5 {
+    font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #3e3e40;
+    margin: 1.94444rem 0;
+    font-size: 1em;
+    line-height: 1.8; }
+  .theme__gGunuXH7DwafQKIoo6BYh p {
+    line-height: 1.8;
+    margin-bottom: 1em;
+    word-wrap: break-word;
+    overflow-wrap: break-word; }
+    .theme__gGunuXH7DwafQKIoo6BYh p:empty {
+      display: none; }
+    .theme__gGunuXH7DwafQKIoo6BYh p:last-child {
+      margin-bottom: 0; }
+  .theme__gGunuXH7DwafQKIoo6BYh ul li,
+  .theme__gGunuXH7DwafQKIoo6BYh ol li {
+    font-size: 1em; }
+  .theme__gGunuXH7DwafQKIoo6BYh em,
+  .theme__gGunuXH7DwafQKIoo6BYh i {
+    font-style: italic; }
+  .theme__gGunuXH7DwafQKIoo6BYh p,
+  .theme__gGunuXH7DwafQKIoo6BYh a,
+  .theme__gGunuXH7DwafQKIoo6BYh li {
+    font-size: 1em; }
+  .theme__gGunuXH7DwafQKIoo6BYh p {
+    color: #3e3e40; }
+  .theme__gGunuXH7DwafQKIoo6BYh a {
+    color: #f65a5b; }
+  .theme__gGunuXH7DwafQKIoo6BYh strong {
+    font-weight: bold; }
+  .theme__gGunuXH7DwafQKIoo6BYh ul,
+  .theme__gGunuXH7DwafQKIoo6BYh ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 1em 0; }
+    .theme__gGunuXH7DwafQKIoo6BYh ul ul,
+    .theme__gGunuXH7DwafQKIoo6BYh ul ol,
+    .theme__gGunuXH7DwafQKIoo6BYh ol ul,
+    .theme__gGunuXH7DwafQKIoo6BYh ol ol {
+      margin-top: 0.5em; }
+      .theme__gGunuXH7DwafQKIoo6BYh ul ul li:last-child,
+      .theme__gGunuXH7DwafQKIoo6BYh ul ol li:last-child,
+      .theme__gGunuXH7DwafQKIoo6BYh ol ul li:last-child,
+      .theme__gGunuXH7DwafQKIoo6BYh ol ol li:last-child {
+        margin-bottom: 0; }
+    .theme__gGunuXH7DwafQKIoo6BYh ul li,
+    .theme__gGunuXH7DwafQKIoo6BYh ol li {
+      position: relative;
+      margin-left: 2em;
+      margin-bottom: 0.5em;
+      line-height: 1.8; }
+      .theme__gGunuXH7DwafQKIoo6BYh ul li:last-child,
+      .theme__gGunuXH7DwafQKIoo6BYh ol li:last-child {
+        margin-bottom: 1em; }
+  .theme__gGunuXH7DwafQKIoo6BYh ul li::before {
+    content: "\25CF";
+    position: absolute;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 0;
+    left: -2em;
+    width: 2em;
+    line-height: 1.8;
+    text-align: center; }
+  .theme__gGunuXH7DwafQKIoo6BYh ol {
+    counter-reset: "ordered-list"; }
+    .theme__gGunuXH7DwafQKIoo6BYh ol li {
+      counter-increment: ordered-list; }
+      .theme__gGunuXH7DwafQKIoo6BYh ol li::before {
+        content: counter(ordered-list) ".";
+        position: absolute;
+        top: 0;
+        left: -2em;
+        width: 2em;
+        text-align: center;
+        line-height: inherit; }
+  .theme__gGunuXH7DwafQKIoo6BYh code {
+    padding: 0 0.25rem;
+    margin: 0 0.0625rem;
+    border-radius: 0.125rem;
+    color: #204056;
+    background-color: #d4d5d6;
+    white-space: normal;
+    vertical-align: baseline;
+    font-family: Monaco, Menlo, "Ubuntu Mono", "Droid Sans Mono", Consolas, monospace;
+    font-size: 0.95em; }
+  .theme__gGunuXH7DwafQKIoo6BYh pre > code {
+    display: block;
+    margin: 1em 0;
+    padding: 0;
+    background-color: transparent; }
+  .theme__gGunuXH7DwafQKIoo6BYh img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    max-width: 100%; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.theme__22QeW-d-YRjfwg7z9oiZH_ {
+  font-size: 16px;
+  font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+  color: #3e3e40;
+  line-height: 1.6; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h1,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h2,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h3,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h4 {
+    font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #3e3e40;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 1.94444rem 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h2,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h3,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h4 {
+    text-transform: uppercase; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h1 {
+    font-size: 2.22222em;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h2 {
+    font-size: 1.44444em;
+    font-weight: bold;
+    letter-spacing: 0.05rem; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h3 {
+    font-size: 1.44444em;
+    letter-spacing: 0.05rem; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h4 {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05rem; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ h5 {
+    font-family: "Oxygen", "Segoe UI", "Helvetica Neue", sans-serif;
+    color: #3e3e40;
+    margin: 1.94444rem 0;
+    font-size: 1em;
+    line-height: 1.6; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ p {
+    line-height: 1.6;
+    margin-bottom: 0.7em;
+    word-wrap: break-word;
+    overflow-wrap: break-word; }
+    .theme__22QeW-d-YRjfwg7z9oiZH_ p:empty {
+      display: none; }
+    .theme__22QeW-d-YRjfwg7z9oiZH_ p:last-child {
+      margin-bottom: 0; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ul li,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ol li {
+    font-size: 1em; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ em,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ i {
+    font-style: italic; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ p,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ a,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ li {
+    font-size: 1em; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ p {
+    color: #3e3e40; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ a {
+    color: #f65a5b; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ strong {
+    font-weight: bold; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ul,
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ol {
+    list-style: none;
+    padding-left: 0;
+    margin: 0.7em 0; }
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ul ul,
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ul ol,
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ol ul,
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ol ol {
+      margin-top: 0.5em; }
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ul ul li:last-child,
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ul ol li:last-child,
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ol ul li:last-child,
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ol ol li:last-child {
+        margin-bottom: 0; }
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ul li,
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ol li {
+      position: relative;
+      margin-left: 2em;
+      margin-bottom: 0.5em;
+      line-height: 1.6; }
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ul li:last-child,
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ol li:last-child {
+        margin-bottom: 1em; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ul li::before {
+    content: "\25CF";
+    position: absolute;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: 0;
+    left: -2em;
+    width: 2em;
+    line-height: 1.6;
+    text-align: center; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ ol {
+    counter-reset: "ordered-list"; }
+    .theme__22QeW-d-YRjfwg7z9oiZH_ ol li {
+      counter-increment: ordered-list; }
+      .theme__22QeW-d-YRjfwg7z9oiZH_ ol li::before {
+        content: counter(ordered-list) ".";
+        position: absolute;
+        top: 0;
+        left: -2em;
+        width: 2em;
+        text-align: center;
+        line-height: inherit; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ code {
+    padding: 0 0.25rem;
+    margin: 0 0.0625rem;
+    border-radius: 0.125rem;
+    color: #204056;
+    background-color: #d4d5d6;
+    white-space: normal;
+    vertical-align: baseline;
+    font-family: Monaco, Menlo, "Ubuntu Mono", "Droid Sans Mono", Consolas, monospace;
+    font-size: 0.95em; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ pre > code {
+    display: block;
+    margin: 0.7em 0;
+    padding: 0;
+    background-color: transparent; }
+  .theme__22QeW-d-YRjfwg7z9oiZH_ img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7em auto;
+    max-width: 100%; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.invalid__1vy1txLryf2j4W1prot59J.invalid__1vy1txLryf2j4W1prot59J.invalid__1vy1txLryf2j4W1prot59J.invalid__1vy1txLryf2j4W1prot59J {
+  background-color: #fddede;
+  border: 1px solid #f65a5b; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.container__2nBQblEbxtWABsG-PzJCJY {
+  padding: 0 2rem 2rem; }
+
+.headerMsg__3plWc8vdIt096bVGraVToV {
+  font-size: 2rem;
+  line-height: 27px;
+  color: #525252; }
+
+.mainMsg__2xzTH40Y3NuPjCRDA-zrpa {
+  text-align: left; }
+
+.maintButton__1ioHX4Aq9TLq2vD5RxHz8v {
+  margin: 0 0.5rem; }
+
+.iconContainer__3Yg7iqG5sp8sfgjsnifN3p {
+  padding: 22px; }
+
+.icon__1fpFg6Yg6qKMUy9gCFo_L0 {
+  color: #525252; }
+
+.position__1lzCOFXPgJEtZu1sbxdG0 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  top: -8px;
+  z-index: 10; }
+
+.position-center__FVGV2tQU1L-P6Z9TMIcJD {
+  left: 50%;
+  -webkit-transform: translateY(-100%) translateX(-50%);
+          transform: translateY(-100%) translateX(-50%); }
+
+.position-left__4pAxj3TPKbWFQ3yuD0MYh {
+  left: 10px; }
+
+.position-right__2xWVjf5FN0FbSicAaIGJ5G {
+  right: 10px; }
+
+.tooltip__2wmDW8keVtpofNhsSnSMBW {
+  padding: 10px;
+  z-index: 98;
+  max-width: 450px;
+  white-space: normal;
+  font-size: 14px; }
+
+.content__GGE5Cg7MHOhx3YOmNO9g0 {
+  position: relative; }
+
+.arrow__4b5MGFSdTHa_M1-YB0Bow {
+  overflow: visible;
+  border: solid;
+  border-color: transparent;
+  border-width: 6px 6px 0;
+  bottom: -6px;
+  left: 25px;
+  position: absolute;
+  z-index: 99; }
+
+.arrow-left__1bOtB5i0TTWaM-dlQQeHHK {
+  left: 25px; }
+
+.arrow-center__5qBNV6NJVpr7TDT9Y9dVp {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.arrow-right__24D7u7Mxhf4_Men-RibzaV {
+  right: 25px; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.tooltip__rGYENLyKnXw3dFJrHxapF {
+  background-color: #152b39;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Monaco, Menlo, "Ubuntu Mono", "Droid Sans Mono", Consolas, monospace; }
+
+.arrow__368SD__jdXY56QCbwOKxe2 {
+  border-top-color: #152b39; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.tooltip__1Ul4m7Og0s3x0PP87SF-nb {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.arrow__3vsr7y3va_loEvCy-B0bgp {
+  border-top-color: #ffffff; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.trialBannerCardShell__1OyWEdaBCjxPzUXrzfLeRS {
+  padding-bottom: 1rem;
+  width: 100%;
+  min-width: 14.6875rem;
+  height: 12.1875rem;
+  max-width: 20rem; }
+  @media only screen and (min-width: 48rem) {
+    .trialBannerCardShell__1OyWEdaBCjxPzUXrzfLeRS {
+      max-width: 84rem;
+      height: auto; } }
+
+.trialBannerContainer__1KqMO2s1Jf3CamhulVbzi- {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch; }
+  @media only screen and (min-width: 48rem) {
+    .trialBannerContainer__1KqMO2s1Jf3CamhulVbzi- {
+      flex-direction: row; } }
+
+.trialBannerClose__2kHBKu6teKLJv4mF0dOaht {
+  border-color: transparent;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 0.625rem;
+  margin-top: 0.3125rem; }
+
+.closeIcon__1qwDm5yvt5NNJ9sphYMolB {
+  color: #7a7a7a; }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.bannerProContainer__1g3NOfe3bs7ZPt1wA5i-0z {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.625rem; }
+
+.bannerPro__3usjVgiipXw5V-SnKdhoN4 {
+  width: 3.5625rem;
+  height: 1.625rem;
+  margin-top: 0.75rem;
+  align-items: center; }
+
+.bannerProImage__2HCRozbbFGizFzIKIw6uAV {
+  height: 1.625rem; }
+
+.bannerBodyTitle__27iV9gl9TaO5YjU2JVTDG1 {
+  font-weight: bold;
+  margin: 0;
+  margin-top: 1.0625rem;
+  text-transform: none;
+  font-size: 1.25rem;
+  padding-left: 0.5rem; }
+
+.bannerBodyMain__3eNZq3FB3CVik4mpWEAFyw {
+  font-size: 1rem;
+  margin-bottom: 0.3125rem;
+  color: #000000; }
+  @media only screen and (min-width: 48rem) {
+    .bannerBodyMain__3eNZq3FB3CVik4mpWEAFyw {
+      padding-right: 0.1875rem; } }
+
+.bannerBodyContainer__3oq8W9WXy21mNcUKWtUNUB {
+  display: flex;
+  flex-direction: column; }
+
+.bannerBodySubtext__HyyLflnAFajk_h8T5MUR_ {
+  margin-top: 0.3125rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+  @media only screen and (min-width: 64rem) {
+    .bannerBodySubtext__HyyLflnAFajk_h8T5MUR_ {
+      flex-direction: row;
+      align-content: flex-start;
+      padding: 0; } }
+
+.bannerUpgradeText__3yN_F8pHqqJpe1_pZGpLLU {
+  font-size: 0.875rem;
+  border-color: transparent;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  color: #4c7ef3;
+  font-weight: bold;
+  padding-left: 0;
+  align-self: flex-start;
+  margin-top: 2.8125rem;
+  margin-bottom: 0.22rem; }
+  @media only screen and (min-width: 48rem) {
+    .bannerUpgradeText__3yN_F8pHqqJpe1_pZGpLLU {
+      margin-top: auto; } }
+
+/**
+ * Global variables and helpers for the codecademy app
+ *
+ * This file should not output any css when compiled
+ *
+ * It should only include variables, mixins, functions,
+ * and other SCSS constructs that do not output and CSS without
+ * being invoked.
+ */
+.daysLeftCircle__22yPaDkv1x8QIKeidfVffv {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 3.125rem;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  align-self: flex-end;
+  position: absolute;
+  top: calc(100% - 85px);
+  right: 0.9375rem; }
+  @media only screen and (min-width: 48rem) {
+    .daysLeftCircle__22yPaDkv1x8QIKeidfVffv {
+      position: relative;
+      top: calc(50% - 1.75rem);
+      align-self: auto;
+      right: auto; } }
+
+.daysLeftCirclePurple__1kHLD4ZDh9XUh0XzAQsABp {
+  background-color: #8782ae; }
+
+.daysLeftCircleRed__3h8WTODv_IxWHUw-B0tqA- {
+  background-color: #fa4359; }
+
+.isExpiredCircle__32h4NJklTT96_KTc0EOm_t {
+  background-color: #fa4359;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.endedText__2L99qqCiL1B3XS0RL3PZvb {
+  font-weight: bold; }
+
+.isExpiredContainer__2PYzpuWWbIhHOTVD2aPTTA {
+  display: flex;
+  justify-content: center; }
+
+.daysLeftContent__2N0kjxhIsid958qPZRm4nT {
+  display: flex;
+  flex-direction: column; }
+
+.daysLeftNumber__2yienwnWsnvv2Zi7MHWE3i {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: -0.5625rem; }
+
+.daysLeftText__22wTE5z-i8e8_2Fkd-oH6q {
+  font-size: 1rem;
+  color: #ffffff; }
+
+.daysLeftTriangle__2lU1MoKpb9wiQu_j0oXcZc {
+  width: 0;
+  height: 0;
+  border-bottom: 67px solid #37c3be;
+  border-left: 73px solid transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+
+/*# sourceMappingURL=786036a92e71b4c25fe3.css.map*/
