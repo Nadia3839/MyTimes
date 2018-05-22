@@ -14,7 +14,28 @@ div.logo {
 li {
 color: black;
 list-style: none;
-
 display: inline-block;
 padding:inherit;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+div {
+  border: solid;
 }
