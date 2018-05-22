@@ -4,38 +4,102 @@ header {
   font-size: 14px;
   font-weight:bold;
   border-bottom: black solid 1px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  align-items: center;
 }
 
 
 div.logo {
+  display: flex;
+  align-items: center;
   color: mediumaquamarine;
+
 }
 
 li {
 color: black;
 list-style: none;
 display: inline-block;
-padding:inherit;
+padding-right: 50px;
 }
 
 .flex-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .column.large {
+  margin: 30px 30px;
   width: 630px;
 }
 
 .column.medium {
+  margin: 30px 30px;
   width: 300px;
 }
 
 .column.small {
+  margin: 30px 30px;
   width: 240px;
 }
 
 div {
-  border: solid;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.FirstHead {
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  background-image: url(/Users/ouzoubair/Desktop/Projects/MyTimes/resources/images/img-story-main.png);
+}
+
+.SecondHead {
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(/Users/ouzoubair/Desktop/Projects/MyTimes/resources/images/img-story-2.png);
+}
+
+.ThirdHead {
+  text-align: center;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(/Users/ouzoubair/Desktop/Projects/MyTimes/resources/images/img-story-3.png);
+}
+
+.FourthHead {
+  text-align: center;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(/Users/ouzoubair/Desktop/Projects/MyTimes/resources/images/img-story-1.png);
+}
+
+.story {
+  display: flex;
+  justify-content:space-between;
+}
+
+.left,
+.right {
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
